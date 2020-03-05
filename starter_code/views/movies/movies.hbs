@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ironhack Cinema</title>
+</head>
+<body>
+<h1>Ironhack Cinema</h1>
+<h2>Click on the movies to check showtimes!</h2>
+<div class="grid">
+    {{#each allMoviesArrRes}}
+    <div class="movie"> 
+        <img src="{{this.image}}" alt="">
+        <p>{{this.title}}</p>
+        <a href="/movie/{{this._id}}">See more</a>
+    </div>
+    {{/each}}
+</div>
+</html>
+{{!-- how to iterate through array with handlebars (hint: look for each method) --}}
